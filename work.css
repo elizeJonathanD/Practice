@@ -1,0 +1,5 @@
+@media #{$small-and-down} {
+.valign-wrapper{
+display: inherit;
+}
+}

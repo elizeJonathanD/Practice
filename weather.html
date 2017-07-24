@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Weather Widget Demo</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="work.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class=" grey lighten-1 " style="width: 60%; border-width: 2px; border-style: solid; border-color: black" >
+    <div class="outerBox">
+      <!-- weather widget header-->
+      <div class="row red darken-4 white-text center-align " >
+        <h1 style="margin: auto;">Weather</h1>
+      </div>
+
+      <!--content box-->
+      <div class="row">
+        <!-- Weather image column-->
+        <div class="col s8 center-align">
+          <!--Temperature main-->
+            <div class="row">
+              <h2 id="currentTemperature" style="font-size: 60px;">45&deg</h2>
+            </div>
+            <!--Icon image-->
+            <div class="row">
+              <img class="responsive-img" src="cloud.png" id="currentWeatherIcon">
+            </div>
+        </div>
+
+
+        <!--accesory column-->
+        <div class = "col s4">
+          <!--Hi temp-->
+          <div class ="row valign-wrapper">
+            <h5>Hi: </h5> <h5 id="hiTemp"></h5>
+          </div>
+          <!--Low temp-->
+          <div class ="row">
+            <h5>Low: </h5> <h5 id="lowTemp"></h5>
+          </div>
+          <!--Rain chance-->
+          <div class ="row">
+            <h5 id="chanceRain">23% chance of rain</h5>
+          </div>
+        </div>
+
+        <!--Button-->
+        <div class="row center-align">
+          <a href=# class="waves-effect waves-light btn red darken-4">Work Week Weather</a>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>
